@@ -12,7 +12,7 @@ int ThirdDigit(int num)
     {
         num = num / 10;
     }
-    if (num % 10 < 0) return -1 * num % 10;
+    if (num < 0) return -1 * num % 10;
     return num % 10;
 }
 int result = ThirdDigit(number);
