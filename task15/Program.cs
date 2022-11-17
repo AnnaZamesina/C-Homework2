@@ -7,7 +7,7 @@
 
 Console.WriteLine("Введите номер дня недели: ");
 int day = Convert.ToInt32(Console.ReadLine());
-bool WeekendNumber (int num)
+bool WeekendNumber(int num)
 {
     if (num == 6 || num == 7) return true;
     return false;
