@@ -22,4 +22,5 @@ bool Polyndrom(int num)
     return false;
 }
 
-Console.WriteLine(Polyndrom(number) ? "да" : "нет");
+if (number<10) Console.WriteLine("Некорректные данные.Повторите ввод");
+else Console.WriteLine(Polyndrom(number) ? "да" : "нет");
