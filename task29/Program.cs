@@ -23,7 +23,7 @@ void PrintArray(int[] col)
 {
     for (int i = 0; i < col.Length; i++)
     {
-        Console.Write ($"{col[i]}  ");
+        Console.Write($"{col[i]}  ");
     }
 }
 
