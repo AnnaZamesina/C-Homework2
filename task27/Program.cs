@@ -16,7 +16,7 @@ int DigitSum(int num)
         sum = sum + remain;
         count++;
     }
-    return sum == 0 ? 0 : sum;
+    return sum;
 }
 Console.WriteLine($"Сумма цифр в числе: {DigitSum(number)}");
 
