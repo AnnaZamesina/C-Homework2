@@ -41,7 +41,7 @@ int FindOddElemAmount(int[] arr)
 Console.WriteLine("Введите длину массива");
 int length = Convert.ToInt32(Console.ReadLine());
 
-int[] array = CreateArrayRndInt(length, 100, 1000);
+int[] array = CreateArrayRndInt(length, 100, 999);
 PrintArray(array, "[", "]");
 Console.WriteLine();
 Console.WriteLine($"Количество чётных чисел в массиве: {FindOddElemAmount(array)}");
