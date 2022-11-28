@@ -32,7 +32,7 @@ int SumOddPosition(int[] arr)
     int sum = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i % 2 == 0) sum = sum + arr[i];
+        if (i % 2 == 1) sum = sum + arr[i];
     }
     return sum;
 }
