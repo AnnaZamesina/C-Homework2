@@ -8,15 +8,18 @@
 int[,,] Create3DMatrixRndInt(int row, int column, int depth)
 {
     int[,,] matrix = new int[row, column, depth];
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    int temp = 0;
+    while (temp < matrix.GetLength(0) * matrix.GetLength(1) * matrix.GetLength(2))
     {
-
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        for (int i = 0; i < matrix.GetLength(0); i++)
         {
-
-            for (int k = 0; k < matrix.GetLength(2); k++)
+            for (int j = 0; j < matrix.GetLength(1); j++)
             {
-                matrix[i, j, k] = 10 + (i * column + j) * depth + k;
+                for (int k = 0; k < matrix.GetLength(2); k++)
+                {
+                    matrix[i, j, k] = temp+10;
+                    temp++;
+                }
             }
         }
     }
@@ -38,5 +41,5 @@ void Print3DMatrix(int[,,] matrix)
     }
 }
 
-int[,,] matrix3D = Create3DMatrixRndInt(2, 2, 2);
+int[,,] matrix3D = Create3DMatrixRndInt(3, 4, 1);
 Print3DMatrix(matrix3D);

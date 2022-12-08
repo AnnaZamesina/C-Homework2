@@ -5,7 +5,7 @@
 // 11 16 15 06
 // 10 09 08 07
 
-int[,] CreateMatrixRndInt(int row, int column, int min, int max)
+int[,] CreateMatrixRndIntjm(int row, int column, int min, int max)
 {
     int[,] matrix = new int[row, column];
     Random rnd = new Random();
