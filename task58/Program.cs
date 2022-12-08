@@ -17,7 +17,6 @@ int[,] CreateMatrixRndInt(int row, int column, int min, int max)
         {
             matrix[i, j] = rnd.Next(min, max + 1);
         }
-
     }
     return matrix;
 }
