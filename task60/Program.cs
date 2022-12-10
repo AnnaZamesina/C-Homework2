@@ -41,5 +41,5 @@ void Print3DMatrix(int[,,] matrix)
     }
 }
 
-int[,,] matrix3D = Create3DMatrixRndInt(3, 4, 1);
+int[,,] matrix3D = Create3DMatrixRndInt(2, 2, 2);
 Print3DMatrix(matrix3D);
